@@ -111,6 +111,11 @@ header p{
     height: 80%;
     border-radius: 20px;
     background-color: var(--very-dark-desaturated-blue-display);
+    overflow-x: scroll;
+}
+
+.display div::-webkit-scrollbar{
+    display: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ KEYPAD ~~~~~~~~~~~~~~~~~~~~ */

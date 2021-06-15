@@ -1,5 +1,25 @@
 const display = document.getElementById('display')
 const keypad = document.getElementById('keypad')
+const toggle = document.getElementById('toggle')
+const body = document.getElementById('body')
+
+toggle.addEventListener('click', e => {
+    currentClass = body.classList.item(0)
+    
+    switch (currentClass) {
+        case 'theme-one':
+            body.classList.replace(currentClass, 'theme-two')
+            break
+        case 'theme-two':
+            body.classList.replace(currentClass, 'theme-three')
+            break
+        case 'theme-three':
+            body.classList.replace(currentClass, 'theme-one')
+            break
+        default:
+            break
+    }
+})
 
 display.textContent = '0'
 operationMode = false

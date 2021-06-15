@@ -14,9 +14,11 @@
     --key-equals-sh: hsl(6, 70%, 34%);
     /* Text */
     --text: hsl(221, 14%, 31%);
+    /* Toggle Position */
+    --position: 5px;
 }
 
-.theme-one header{
+.theme-one header, .theme-one footer{
     color: white;
 }
 
@@ -38,6 +40,8 @@
     --key-equals-sh: hsl(25, 99%, 27%);
     /* Text */
     --text: hsl(60, 10%, 19%);
+    /* Toggle Position */
+    --position: 31px;
 }
 
 .theme-three{
@@ -56,6 +60,8 @@
     --key-equals-sh: hsl(177, 92%, 70%);
     /* Text */
     --text: hsl(52, 100%, 62%);
+    /* Toggle Position */
+    --position: 55px;
 }
 
 * {
@@ -118,13 +124,14 @@ header p{
     border: none;
     border-radius: 25px;
     background-color: var(--keypad-bg);
+    cursor: pointer;
 }
 
 .toggle span{
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 5px;
+    left: var(--position);
     top: 2px;
     background-color: var(--key-equals-bg);
     border-radius: 50%;
